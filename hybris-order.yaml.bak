@@ -37,8 +37,8 @@ spec:
       affinity: {}
       containers:
       - env:
-        - name: test
-          value: test
+        - name: test1
+          value: test1
         image: 172.19.179.167:5000/omni-channel-architecture-center/docker-registry/hybris_server
         imagePullPolicy: Always
         name: hybris-task

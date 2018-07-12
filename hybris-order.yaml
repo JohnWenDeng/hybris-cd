@@ -10,7 +10,7 @@ metadata:
   labels:
     workload.user.cattle.io/workloadselector: deployment-hybris-work-hybris-task
   name: hybris-task
-  namespace: default
+  namespace: hybris-work
   resourceVersion: "231579"
   selfLink: /apis/apps/v1beta2/namespaces/hybris-work/deployments/hybris-task
   uid: ee8a58e2-8575-11e8-99bc-00163e02f123
