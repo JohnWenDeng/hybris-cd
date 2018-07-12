@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
@@ -30,7 +31,7 @@ spec:
     metadata:
       annotations:
         field.cattle.io/ports: '[[{"containerPort":9001,"dnsName":"hybris-task-nodeport","kind":"NodePort","name":"9001tcp01","protocol":"TCP","sourcePort":0},{"containerPort":9002,"dnsName":"hybris-task-nodeport","kind":"NodePort","name":"9002tcp01","protocol":"TCP","sourcePort":0},{"containerPort":8983,"dnsName":"hybris-task-nodeport","kind":"NodePort","name":"8983tcp01","protocol":"TCP","sourcePort":0}]]'
-      creationTimestamp: null
+      creationTimestamp:
       labels:
         workload.user.cattle.io/workloadselector: deployment-hybris-work-hybris-task
     spec:
@@ -39,7 +40,7 @@ spec:
       - env:
         - name: test1
           value: test1
-        image: 172.19.179.167:5000/omni-channel-architecture-center/docker-registry/hybris_server:1
+        image: dengwenjun/hybris_server:1
         imagePullPolicy: Always
         name: hybris-task
         ports:
