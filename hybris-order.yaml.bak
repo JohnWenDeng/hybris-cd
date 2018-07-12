@@ -39,9 +39,9 @@ spec:
       - env:
         - name: test1
           value: test1
-        image: 172.19.179.167:5000/omni-channel-architecture-center/docker-registry/hybris_server
+        image: 172.19.179.167:5000/omni-channel-architecture-center/docker-registry/hybris_server:1
         imagePullPolicy: Always
-        name: hybris-task
+        name: hybris-task1
         ports:
         - containerPort: 9001
           name: 9001tcp01
